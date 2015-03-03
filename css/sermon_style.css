@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: DroidSans;
+    src: url('fonts/DroidSans.ttf');
+}
+
+@font-face{
+    font-family: ExpletusSans;
+    src: url('fonts/ExpletusSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face{
+    font-family: Arvo;
+    src: url('fonts/Arvo-Regular.ttf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body{      
+    font-family: Montserrat-Regular;    
+    min-height: 740px;   
+    color: #06192e;
+    
+    background-color: #daf4f6;
+   /* background-image:url("../images/light-wood.jpg");*/
+    
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Defaults */
+
+.step{
+    width: 1100px;
+    padding: 20px;
+	font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    line-height: 1.5;
+}
+
+.first {
+    width: 2000px;
+    padding: 0px;
+}
+
+.first-light {
+    width: 2000px;
+    padding: 0px;
+}
+
+.song {
+    width: 1300px;
+    padding-top: 10px;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.presentation {
+    width: 1500px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.level2 h2 {
+    color: #06192e;
+    font-size: 48px;
+}
+
+
+.text {
+    font-family: Montserrat-Regular;
+    color: #f8e094;
+}
+
+.small {
+    font-family: ExpletusSans;
+    font-size: 60px;
+    line-height: 1em;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.video {
+     padding: 0px;
+     width: 1280px;
+}
+
+.step:not(.active) { opacity: .3; }
+.step.hide:not(.active) { opacity: 0; }
+.step.first:not(.active) { opacity: 1; } 
+/* 0 is full black and 1 is no opacity. Adjust to .3 or .7 depending on how dark you want it*/
+
+.slide{
+    display: block;    
+    width: 1000px;
+    height: 700px;
+    font-family: Montserrat-Regular;
+    color: #EEE;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .9);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    position: relative;  
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.title{
+    color: #EEE;
+    font-family: Montserrat-Regular;
+    font-size: 60pt;
+    padding: 20px;
+    line-height: 65pt;
+    text-align: center;
+    position: absolute;
+    letter-spacing: normal;
+    top: 25%;
+}
+
+.section-title{
+    font-family: Montserrat-Regular;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50pt;
+    line-height: 110px;
+    width: inherit;
+}
+
+.section-title{
+    font-size: 50pt;
+}
+
+.with_logo{
+    top: 10%;
+}
+
+.lower{
+    top: 40%;
+}
+
+#ty{
+    margin-top: 10px;
+    font-family: ExpletusSans;
+    text-align: center;
+    font-size: 50pt;
+}
+
+.slide-title{
+    color: #FFF;
+    height: 120px;
+    font-size: 36pt;
+    line-height: 120px;
+}
+
+.slide-title-small{
+    font-size: 36pt;
+    line-height: 60px;
+}
+
+.no-title{
+    margin-top: 120px;
+}
+
+.slide-content{
+    /*height: 473px;*/    
+    font-size: 30pt;
+    line-height: 40pt;
+    padding: 15px 40px;
+    text-align: justify;
+}
+
+em {
+    color: #cccccc;
+    font-size: 40pt;
+    opacity: 0;
+}
+
+.lv0_indent{
+    margin-left: 30px;
+}
+
+.lv1_indent{
+    margin-left: 60px;
+}
+
+.lv2_indent{
+    margin-left: 120px;
+}
+
+/* EOF Defaults */
+
+/* Content */
+
+#impress.step-overview .step {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#slide_details{
+    font-size: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 5px;
+}
+
+#slide_details p{
+    text-align: right;
+}
+
+figure#foss_question_logo{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#thank-you p{
+    margin-bottom: 10px;
+}
+
+#thank-you p img{
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+#name{
+    font-size: 40pt;
+}
+
+#email{
+    margin-bottom: 20px !important;
+    margin-left: -0.3em;
+}
+
+a{
+    color: #EEE;
+    padding: 0.2em 0.3em 0.4em 0.3em;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a:link{
+    -webkit-transition: 0.3s;
+    -moz-transition:    0.3s;
+    -ms-transition:     0.3s;
+    -o-transition:      0.3s;
+    transition:         0.3s;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+a:link:hover {
+    background: rgba(255,255,255, 0.2);
+}
+
+.img_tb{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.img_tb td{
+    text-align: center;
+    padding: 3px;
+}
+
+/* EOF Content */
+
+/* Fallback */
+
+.fallback-message {
+    font-family: DroidSans;
+    line-height: 1.3;
+    
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.impress-not-supported .slide{
+    background: #333;
+    border: #666 1px solid;
+    
+    -webkit-box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+    box-shadow: 0 4px 16px rgba(255,255,255,0.5);
+}
+
+.impress-not-supported .slide .slide-title{
+    padding: 10px 15px 0 15px;
+}
+
+.impress-not-supported .slide .slide-content{
+    padding: 15px 40px;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+/* Added to Baptist Presentation*/
+
+h1 {
+    text-align: center;
+}
+
+#book figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#book figure figcaption { font-size: 65%;
+                  text-align: center; }
+
+#photos1, #photos2, #photos3, #photos4 {
+  -webkit-column-count: 3;
+  -webkit-column-gap:   10px;
+  -moz-column-count:    3;
+  -moz-column-gap:      10px;
+  column-count:         3;
+  column-gap:           10px;  
+}
+
+#photos1.past, #photos2.past, #photos3.past, #photos4.past {
+    opacity: 1;
+}
+
+figure figcaption { 
+    font-size: 40%;
+    text-align: center; 
+    padding-top: 20px;
+}
+
+#overphoto.future {
+   opacity: 0;
+}
+
+.point p {
+    font-family: Montserrat-Regular;
+    color: #06192e;
+    margin-left: 500px;
+    margin-bottom: 200px;
+}
+
+.point.future p {
+    opacity: 0;
+}
+
+.point1 {
+	padding-bottom: 100px;
+}
+
+.point2 {
+	padding-top: 125px;
+}
+
+.point3 {
+	padding-top: 300px;
+}
+
+.point4 {
+	padding-top: 475px;
+}
+
+.nofade h1 {
+    line-height: 1em;
+}
+
+.nofade span {
+    color: #62b0bd;
+    font-size: 1.3em;
+}
+
+.nofade.past {
+    opacity: 1;
+}
+
+.counts table {
+    font-size: .7em;
+    margin: auto;
+    width: 1000px;
+}
+
+.counts thead {
+    color: #62b0bd;
+}
+
+.pastor {
+    font-size: 30px;
+    padding-left: 500px;
+    padding-top: 50px;
+}
+
+.pastor img {
+    width: 100px;
+    float: left;
+}
+
+.congregation {
+    font-size: 30px;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.congregation img {
+    width: 1000px;
+    float: left;
+}
+
+.denomination {
+    font-size: 30px;
+    padding-left: 300px;
+}
+
+.denomination img {
+    width: 100px;
+    float: left;
+}
+
+.congregation-flip {
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.congregation-flip img {
+    width: 1000px;
+    float: left;
+}
+
+.pastor-flip {
+    font-size: 30px;
+    padding-left: 500px;
+    padding-top: 200px;
+}
+
+.pastor-flip img {
+    width: 100px;
+    float: left;
+}
+
+.denomination-flip {
+    font-size: 30px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+
+.denomination-flip img {
+    width: 100px;
+    float: left;
+}
+
+.earth img {
+    width: 1400px;
+}
+
+#map.past {
+    opacity: 1;
+}
+
+.percentage.active p, .percentage.past p {
+    font-size: .9em;
+    color: #62b0bd;
+    margin-left: 175px;
+}
+
+.percentage.future p {
+    opacity: 0;
+}
+
+
+/* EOF Fallback */
