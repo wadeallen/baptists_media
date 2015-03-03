@@ -493,5 +493,19 @@ figure figcaption {
     opacity: 0;
 }
 
+#resources p {
+    font-size: .8em;
+}
+
+#resources span {
+    color: #62b0bd;
+    padding-left: 50px;
+}
+
+#resources img {
+    float: left;
+    padding-right: 100px;
+}
+
 
 /* EOF Fallback */
